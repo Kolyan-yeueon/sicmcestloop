@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>SIC MC EST - 登录</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      margin: 0;
+    }
+    .login-box {
+      background: rgba(0,0,0,0.6);
+      padding: 40px;
+      border-radius: 12px;
+      text-align: center;
+      width: 320px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    }
+    .login-box h1 {
+      margin-bottom: 25px;
+      font-size: 24px;
+      color: #1DB954;
+    }
+    input {
+      width: 80%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 6px;
+      border: none;
+      font-size: 16px;
+    }
+    button {
+      width: 85%;
+      padding: 12px;
+      margin-top: 15px;
+      background: #1DB954;
+      border: none;
+      border-radius: 6px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #1ed760;
+    }
+  </style>
+  <script>
+    function login() {
+      const pwd = document.getElementById("password").value;
+      if (pwd === "0513") { // 密码可改
+        sessionStorage.setItem("auth","ok");
+        window.location.href="secret.html";
+      } else {
+        alert("密码错误，请重试！");
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="login-box">
+    <h1>GET INTO ME</h1>
+    <input type="password" id="password" placeholder="输入密码"><br>
+    <button onclick="login()">登录</button>
+  </div>
+</body>
+</html>
