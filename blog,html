@@ -3,13 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <title>我的博客</title>
-  <style>
-    body { background:#fafafa; font-family:'Segoe UI',sans-serif; color:#333; padding:20px; max-width:800px; margin:auto; }
-    h1 { color:#1DB954; }
-    .post { background:#fff; padding:20px; margin:20px 0; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1); }
-    .post h2 { margin:0 0 10px; }
-    .post p { line-height:1.6; }
-  </style>
   <script>
     if (sessionStorage.getItem("auth") !== "blog") {
       window.location.href="index.html";
@@ -17,11 +10,8 @@
   </script>
 </head>
 <body>
-  <h1>hhhhhhhh</h1>
-  <div class="post">
-    <h2>请叫我皇上</h2>
-    <p>哈哈哈哈哈哈哈哈哈哈哈哈</p >
-  </div>
+  <h1>欢迎来到我的博客</h1>
+  <p>这是只有输入 3698 才能看到的页面。</p >
   返回首页
 </body>
 </html>
