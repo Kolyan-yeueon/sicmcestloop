@@ -52,18 +52,18 @@
     }
   </style>
   <script>
-    function login() {
-      const pwd = document.getElementById("password").value;
-      if (pwd === "0513") {
-        sessionStorage.setItem("auth","account");
-        window.location.href="secret.html";  // 账号导航页
-      } else if (pwd === "3698") {
-        sessionStorage.setItem("auth","blog");
-        window.location.href="blog.html";    // 博客页
-      } else {
-        alert("密码错误！");
-      }
-    }
+   function login() {
+  const pwd = document.getElementById("password").value;
+  if (pwd === "0513") {
+    sessionStorage.setItem("auth","account");
+    window.location.href="secret.html";  // 账号导航页
+  } else if (pwd === "3698") {
+    sessionStorage.setItem("auth","blog");
+    window.location.href="blog.html";    // 博客页
+  } else {
+    alert("密码错误！");
+  }
+}
   </script>
 </head>
 <body>
