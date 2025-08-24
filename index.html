@@ -7,16 +7,17 @@
     body { background:#121212; color:white; text-align:center; margin-top:100px; font-family:Arial; }
     input,button { padding:10px; margin:10px; font-size:16px; }
     button { background:#1DB954; border:none; border-radius:6px; color:white; cursor:pointer; }
+    button:hover { background:#1ed760; }
   </style>
   <script>
     function login() {
-      const pwd = document.getElementById("password").value.trim();  // 加trim避免多余空格
+      const pwd = document.getElementById("password").value.trim();
       if (pwd === "0513") {
         sessionStorage.setItem("auth","account");
-        window.location.href="secret.html";  // 去你现有的 secret 页面
+        window.location.href="secret.html";  // 账号页
       } else if (pwd === "3698") {
         sessionStorage.setItem("auth","blog");
-        window.location.href="blog.html";    // 去博客
+        window.location.href="blog.html";    // 博客页
       } else {
         alert("密码错误！");
       }
